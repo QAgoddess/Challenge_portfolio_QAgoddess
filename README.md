@@ -16,31 +16,31 @@
 ```
 ### login_input_xpath
 ```xpath
-//*[@id="login"]
-//*[@name="login"]
-//input[@type="text"]
+//*[@id='login']
+//*[@name='login']
+//input[@type='text']
 ```
 ### password_input_xpath
 ```xpath
-//*[@id="password"]
-//*[@name="password"]
-//input[@type="password"]
+//*[@id='password']
+//*[@name='password']
+//input[@type='password']
 ```
-### remaind_password_hyperlink_xpath
+### remind_password_hyperlink_xpath
 ```xpath
 //*[@id="__next"]/form/div/div[1]/a
-//*[text()="Remind password"]
+//*[text()='Remind password']
 //child::div/a
 ```
 ### english_xpath
 ```xpath
 //*[@id="__next"]/form/div/div[2]/div/div
-//*[@role="button"]
-//*[text()="English"]
+//*[@role='button']
+//*[text()='English']
 ```
 ### sign_in_xpath
 ```xpath
 //*[@id="__next"]/form/div/div[2]/button/span[1]
 //span[contains(@class,'label')]
-//*[text()="Sign in"]
+//*[text()='Sign in']
 ```
