@@ -7,6 +7,7 @@
 ### Results 10/14
 
 # Task 2: Selectors
+## Subtask 2: Selectors searching
 ### white_square_xpath
 ``` xpath
 //*[@id="__next"]/form/div
