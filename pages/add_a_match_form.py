@@ -1,7 +1,7 @@
 from pages.base_page import BasePage
 
 
-class Dashboard(BasePage):
+class AddAMatchForm(BasePage):
     header_xpath = "//*[@id='__next']/div[1]/header"
     header_text_xpath = "//*[contains(@class, 'jss16')]"
     main_page_xpath = "//div[contains(@class, '443')]"
