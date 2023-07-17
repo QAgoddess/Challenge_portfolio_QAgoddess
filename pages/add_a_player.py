@@ -1,33 +1,14 @@
-import os
+from pages.base_page import BasePage
 import time
-import unittest
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 
-from pages.login_page import LoginPage
-from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
-from pages.dashboard import Dashboard
 
-class TestDashboard(unittest.TestCase):
+class AddAPlayer(BasePage):
 
-    @classmethod
-    def setUp(self):
-        os.chmod(DRIVER_PATH, 755)
-        self.driver_service = Service(executable_path=DRIVER_PATH)
-        self.driver = webdriver.Chrome(service=self.driver_service)
-        self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
-        self.driver.fullscreen_window()
-        self.driver.implicitly_wait(IMPLICITLY_WAIT)
+    def title_of_page(self):
+        time.sleep(5)
+        assert self.get_page_title(self.dashboard_url) == self.expected_title
 
-    def test_add_player(self):
-        user_login = LoginPage(self.driver)
-        user_login.type_in_email('user01@getnada.com')
-        user_login.type_in_password('Test-1234')
-        user_login.click_on_the_sign_in_button()
-        dashboard_page = Dashboard(self.driver)
-        dashboard_page.click_on_the_add_player()
-        time.sleep(4)
+    def click_on_the_add_player(self):
+        time.sleep(5)
+        self.click_on_the_element(self.add_player_xpath)
 
-    @classmethod
-    def tearDown(self):
-        self.driver.quit()
