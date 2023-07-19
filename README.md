@@ -44,3 +44,8 @@
 //span[contains(@class,'label')]
 //*[text()='Sign in']
 ```
+
+# Task 4: Refactor, debugger and test cases :cowboy_hat_face:
+## Subtask 1-3: My task on Google driver :monocle_face:
+
+https://drive.google.com/drive/folders/1YPhmaW96y5liDtDO0lhSjKl7C4xlTeix?usp=drive_link
