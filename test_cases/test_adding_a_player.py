@@ -9,7 +9,7 @@ from pages.dashboard import Dashboard
 from pages.add_a_player import AddAPlayer
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
-'''Przypadek testowy nr 3, dodawanie gracza'''
+'''Przypadek testowy nr 3, dodawanie gracza (tylko wymagane pola)'''
 
 
 class TestAddAPlayer(unittest.TestCase):

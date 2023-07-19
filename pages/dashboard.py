@@ -25,3 +25,7 @@ class Dashboard(BasePage):
     def click_on_the_add_player(self):
         time.sleep(5)
         self.click_on_the_element(self.add_player_xpath)
+
+    def click_on_the_sign_out(self):
+        time.sleep(5)
+        self.click_on_the_element(self.sign_out_xpath)
