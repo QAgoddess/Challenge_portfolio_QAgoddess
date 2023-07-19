@@ -8,6 +8,9 @@ class AddAPlayer(BasePage):
     age_field_xpath = "//input[@name='age']"
     main_position_xpath = "//input[@name='mainPosition']"
     submit_button_xpath = "//*[3]/button[1]/span[1]"
+    leg_field_xpath = "//*[@id='mui-component-select-leg']"
+    right_leg_xpath = "//li[@data-value='right']"
+    left_leg_xpath = "//li[@data-value='left']"
 
     def title_of_page(self):
         time.sleep(5)
@@ -31,3 +34,11 @@ class AddAPlayer(BasePage):
 
     def click_on_the_submit(self):
         self.click_on_the_element(self.submit_button_xpath)
+
+    def select_leg(self, leg):
+        self.click_on_the_element(self.leg_field_xpath)
+        time.sleep(1)
+        if leg == "right":
+            self.click_on_the_element(self.right_leg_xpath)
+        else:
+            self.click_on_the_element(self.left_leg_xpath)
