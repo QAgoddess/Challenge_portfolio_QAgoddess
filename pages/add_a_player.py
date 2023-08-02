@@ -11,6 +11,7 @@ class AddAPlayer(BasePage):
     leg_field_xpath = "//*[@id='mui-component-select-leg']"
     right_leg_xpath = "//li[@data-value='right']"
     left_leg_xpath = "//li[@data-value='left']"
+    main_page_xpath = "//ul[1]/div[1]/div[2]/span"
 
     def title_of_page(self):
         time.sleep(5)
@@ -42,3 +43,7 @@ class AddAPlayer(BasePage):
             self.click_on_the_element(self.right_leg_xpath)
         else:
             self.click_on_the_element(self.left_leg_xpath)
+
+    def click_on_main_page(self):
+        time.sleep(5)
+        self.click_on_the_element(self.main_page_xpath)

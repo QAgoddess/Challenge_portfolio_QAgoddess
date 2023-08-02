@@ -12,18 +12,18 @@ from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 '''Przypadek testowy nr 3, dodawanie gracza (tylko wymagane pola)'''
 
 
-class TestAddAPlayer(unittest.TestCase):
+class TestAddingAPlayer(unittest.TestCase):
 
     @classmethod
     def setUp(self):
         os.chmod(DRIVER_PATH, 755)
         self.driver_service = Service(executable_path=DRIVER_PATH)
         self.driver = webdriver.Chrome(service=self.driver_service)
-        self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
+        self.driver.get('https://dareit.futbolkolektyw.pl/en/')
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def test_add_player(self):
+    def test_adding_a_player(self):
         user_login = LoginPage(self.driver)
         user_login.type_in_email('user01@getnada.com')
         user_login.type_in_password('Test-1234')
@@ -42,7 +42,12 @@ class TestAddAPlayer(unittest.TestCase):
         add_a_player_page.type_in_main_position('napastnik')
         time.sleep(2)
         add_a_player_page.click_on_the_submit()
-        time.sleep(2)
+        time.sleep(5)
+        add_a_player_page.click_on_main_page()
+        time.sleep(5)
+        dashboard_page.check_last_created_player()
+        time.sleep(10)
+
 
     @classmethod
     def tearDown(self):

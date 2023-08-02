@@ -45,7 +45,18 @@
 //*[text()='Sign in']
 ```
 
+# Task 3: DONE & SENT :star_struck:
+
 # Task 4: Refactor, debugger and test cases :cowboy_hat_face:
 ## Subtask 1-3: My task on Google driver :monocle_face:
+### Test cases:
 
 https://drive.google.com/drive/folders/1YPhmaW96y5liDtDO0lhSjKl7C4xlTeix?usp=drive_link
+
+# Task 5: DONE & SENT :star_struck:
+
+# Task 6: Bug and test reporting :cowboy_hat_face:
+## Subtask 1-3 :monocle_face:
+### Bug Reports:
+
+https://docs.google.com/spreadsheets/d/1kUO4OlPOH6Vg3v8oKKgs0jsbSExUq-yT_40lf8GwcGg/edit#gid=0

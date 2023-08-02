@@ -8,9 +8,10 @@ class LoginPage(BasePage):
     login_field_xpath = "//*[@id='login']"
     password_field_xpath = "//*[@id='password']"
     sign_in_button_xpath = "//*[text()='Sign in']"
+    zaloguj_xpath = "//*[text()='Zaloguj']"
     remind_password_hyperlink_xpath = "//*[text()='Remind password']"
     english_xpath = "//*[text()='English']"
-    login_url = 'https://scouts-test.futbolkolektyw.pl/en'
+    login_url = 'https://dareit.futbolkolektyw.pl/en/'
     expected_title = "Scouts panel - sign in"
     language_field_xpath = "//div[2]/div/div"
     english_xpath = "//div[3]/ul/li[2]"
