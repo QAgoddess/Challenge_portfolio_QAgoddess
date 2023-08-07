@@ -16,8 +16,8 @@ class Dashboard(BasePage):
     add_player_xpath = "//*[text()='Add player']"
     activity_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[3]/div/div/h2"
     expected_title = "Scouts panel"
-    dashboard_url = "https://dareit.futbolkolektyw.pl/en/"
-    add_a_player_url = "https://dareit.futbolkolektyw.pl/en/players/add"
+    dashboard_url = "https://scouts-test.futbolkolektyw.pl/en"
+    add_a_player_url = "https://scouts-test.futbolkolektyw.pl/en/players/add"
     last_created_player_xpath = "//*[text()='Jan Aktywny']"
     expected_player = "Jan Aktywny"
 

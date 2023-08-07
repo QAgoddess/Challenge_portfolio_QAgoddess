@@ -4,7 +4,7 @@ from unittest.loader import makeSuite
 
 
 from test_cases.adding_a_player import TestAddingAPlayer
-from test_cases.adding_an_incorrect_player import TestAddAnIncorrectPlayer
+from test_cases.incorrect_adding_a_player import TestAddAnIncorrectPlayer
 from test_cases.framework import Test, TestSelectLanguage
 from test_cases.incorrect_login_to_the_system import TestLoginPageIncorrectData
 from test_cases.log_out_of_the_system import TestLogOutOfTheSystem
